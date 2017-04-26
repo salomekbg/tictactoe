@@ -1,4 +1,4 @@
-tic-tac-toe
+#tic-tac-toe
 
 This web app uses HTML, CSS and JavaScript for a simple two-player version of tic-tac-toe.
 
