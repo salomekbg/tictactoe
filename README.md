@@ -1,6 +1,6 @@
-#tic-tac-toe
+<h1>tic-tac-toe</h1>
 
-This web app uses HTML, CSS and JavaScript for a simple two-player version of tic-tac-toe.
+This web app uses HTML, CSS, jQuery, and JavaScript for a simple two-player version of tic-tac-toe.
 
 1. Go to the site: https://salomekbg.github.io/tictactoe/.
 2. Player 1 (X) will always go first.  Click on any one of the black squares to place your "X" token.
