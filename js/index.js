@@ -75,21 +75,19 @@ function determineWinner() {
     boxesArray[i] = boxes[i].innerText;
   }
   for (i = 0; i < winningConditions.length; i++) {
-    if (turn <= 9 && boxesArray[winningConditions[i][0]] === "X" && boxesArray[winningConditions[i][1]] === "X" && boxesArray[winningConditions[i][2]] === "X") {
+    if (boxesArray[winningConditions[i][0]] === "X" && boxesArray[winningConditions[i][1]] === "X" && boxesArray[winningConditions[i][2]] === "X") {
       boxes[winningConditions[i][0]].style.backgroundColor = 'green';
       boxes[winningConditions[i][1]].style.backgroundColor = 'green';
       boxes[winningConditions[i][2]].style.backgroundColor = 'green';
       winner = "Congrats Player X!";
       $('.status')[0].innerText = winner;
-      return;
-    } else if (turn <= 9 && boxesArray[winningConditions[i][0]] === "O" && boxesArray[winningConditions[i][1]] === "O" && boxesArray[winningConditions[i][2]] === "O") {
+    } else if (boxesArray[winningConditions[i][0]] === "O" && boxesArray[winningConditions[i][1]] === "O" && boxesArray[winningConditions[i][2]] === "O") {
       boxes[winningConditions[i][0]].style.backgroundColor = 'green';
       boxes[winningConditions[i][1]].style.backgroundColor = 'green';
       boxes[winningConditions[i][2]].style.backgroundColor = 'green';
       winner = "Congrats Player O!";
       $('.status')[0].innerText = winner;
-      return;
-    } else if (turn === 9) {
+    } else if (turn === 9 && winner === "") {
       winner = "'Tis a Draw!";
       $('.status')[0].innerText = winner;
     }
