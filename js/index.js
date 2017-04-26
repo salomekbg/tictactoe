@@ -23,6 +23,7 @@ var winningConditions = [
 // set who the winner is
 var winner = "";
 
+// clear site for a new game
 function newGame() {
   var boxes = $('td');
   $('button').click(function() {
@@ -38,6 +39,9 @@ function newGame() {
 
 // run game if there is no winner yet and check if the position has already been taken
 function gamePlay(){
+  $('td').mouseover(function() {
+    this.style.cursor = 'pointer';
+  })
   $('td').click(function() {
     if (winner === "") {
       if (turn === 0 || turn % 2 === 0 && this.innerText === "") {
